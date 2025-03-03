@@ -24,3 +24,4 @@ Copiar
 O preço atual do Bitcoin em dolar é 50000.00
 O preço atual do Bitcoin em reais é 250000.00
 ```  
+
