@@ -1,27 +1,28 @@
 # Bitcoin Price Monitor
-Bitcoin Price Monitor é um projeto simples em Ruby que consulta APIs para monitorar o preço do Bitcoin em diferentes moedas (USD e BRL) e exibe os preços de forma contínua. O projeto utiliza as APIs públicas da CoinGecko e Binance para obter os preços.
 
-# Tecnologias
-**Ruby**: Linguagem de programação principal.  
-**Net**::HTTP: Biblioteca para fazer requisições HTTP.  
-**JSON**: Biblioteca para manipulação de dados em formato JSON.  
-**Pry**: Utilitário de depuração (opcional, para inspeção de dados).   
+Bitcoin Price Monitor is a Ruby project that queries APIs to monitor the price of Bitcoin in different currencies (USD and BRL) and continuously displays the prices. The project uses the public APIs from CoinGecko and Binance to fetch the prices.
 
-# Funcionalidade
-O projeto consulta o preço do Bitcoin em USD da API da CoinGecko.  
-Também consulta o preço do Bitcoin em BRL da API da Binance.  
-Exibe os preços na tela em tempo real e a cada 4 segundos faz uma nova consulta.  
+## Technologies
+- **Ruby**: Main programming language.
+- **Net::HTTP**: Library for making HTTP requests.
+- **JSON**: Library for handling data in JSON format.
+- **Pry**: Debugging utility (optional, for data inspection).
 
-# Estrutura do Código
-**Bitcoin Class**: A classe Bitcoin tem métodos para inicializar a URL, buscar os preços de Bitcoin em USD e BRL, e exibir esses valores.  
-**API Calls**: O método fetch_bitcoin_price faz a requisição para a API da CoinGecko para obter o preço em USD, enquanto o método fetch_bitcoin_price_real faz a requisição à API da Binance para obter o preço em BRL.   
+## Functionality
+- The project queries the Bitcoin price in USD from the CoinGecko API.
+- It also queries the Bitcoin price in BRL from the Binance API.
+- The prices are displayed on the screen in real-time, and every 4 seconds, a new query is made.
 
-# Exemplo de Saída
-A cada 4 segundos, o script irá imprimir o preço do Bitcoin em USD e BRL na tela:
+## Code Structure
+- **Bitcoin Class**: The Bitcoin class has methods to initialize the URL, fetch Bitcoin prices in USD and BRL, and display these values.
+- **API Calls**: The `fetch_bitcoin_price` method makes the request to the CoinGecko API to get the price in USD, while the `fetch_bitcoin_price_real` method queries the Binance API to get the price in BRL.
+
+## Example Output
+Every 4 seconds, the script will print the price of Bitcoin in USD and BRL on the screen:
 
 ```bash
-Copiar
-O preço atual do Bitcoin em dolar é 50000.00
-O preço atual do Bitcoin em reais é 250000.00
+Copy
+The current Bitcoin price in USD is 50000.00
+The current Bitcoin price in BRL is 250000.00
 ```  
 
